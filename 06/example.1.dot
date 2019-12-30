@@ -1,0 +1,30 @@
+strict digraph {
+graph [layout=neato];
+COM [style="filled", fillcolor="white"];
+B [style="filled", fillcolor="white"];
+C [style="filled", fillcolor="white"];
+D [style="filled", fillcolor="white"];
+E [style="filled", fillcolor="white"];
+F [style="filled", fillcolor="white"];
+G [style="filled", fillcolor="white"];
+H [style="filled", fillcolor="white"];
+I [style="filled", fillcolor="white"];
+J [style="filled", fillcolor="white"];
+K [style="filled", fillcolor="white"];
+L [style="filled", fillcolor="white"];
+YOU [style="filled", fillcolor="white"];
+SAN [style="filled", fillcolor="white"];
+COM -> B [ label="1", dir="none"];
+B -> C [ label="1", dir="none"];
+B -> G [ label="1", dir="none"];
+C -> D [ label="1", dir="none"];
+D -> E [ label="1", dir="none"];
+D -> I [ label="1", dir="none"];
+E -> F [ label="1", dir="none"];
+E -> J [ label="1", dir="none"];
+G -> H [ label="1", dir="none"];
+I -> SAN [ label="1", dir="none"];
+J -> K [ label="1", dir="none"];
+K -> L [ label="1", dir="none"];
+K -> YOU [ label="1", dir="none"];
+}

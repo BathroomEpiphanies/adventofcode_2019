@@ -1,0 +1,68 @@
+strict digraph  {
+  //graph [ layout="dot" ];
+  graph [ layout="neato" ];
+  //graph [ layout="circo", root="NN" ];
+  //graph [ layout="twopi", root="NN" ];
+  
+  graph [ size="5,5", ratio="fill", fontsize="2", mindist="1", nodesep="0.3" ];
+  node  [ width="0.5", height="0.5", fontname="Ubuntu", fontsize="8" ];
+  edge  [ minlen="2", fontname="Ubuntu", fontsize="8" ];
+  
+  node [ style="filled", fillcolor="#0000FF40"; ];
+  AA  [ ];
+  ZZ  [ ];
+
+  node [ style="filled", fillcolor="#FF000040"; ];
+  DEu [ ];
+  FGu [ ];
+  BCu [ ];
+
+  node [ style="filled", fillcolor="#00FF0040"; ];
+  BCd [ ];
+  DEd [ ];
+  FGd [ ];
+
+  {rank = same; AA; ZZ; DEu; FGu; BCu;}
+  {rank = same; BCd; DEd; FGd;}
+    
+  edge [ color="#000000C0" ]
+  AA  -> BCd   [ label=" 4: 0" ];
+  AA  -> FGd   [ label="30: 0" ];
+  AA  -> ZZ    [ label="26: 0" ];
+  BCd -> AA    [ label=" 4: 0" ];
+  BCd -> FGd   [ label="32: 0" ];
+  BCd -> ZZ    [ label="28: 0" ];
+  BCu -> DEd   [ label=" 6: 0" ];
+  DEd -> BCu   [ label=" 6: 0" ];
+  DEu -> FGu   [ label=" 4: 0" ];
+  FGd -> AA    [ label="30: 0" ];
+  FGd -> BCd   [ label="32: 0" ];
+  FGd -> ZZ    [ label=" 6: 0" ];
+  FGu -> DEu   [ label=" 4: 0" ];
+  ZZ  -> AA    [ label="26: 0" ];
+  ZZ  -> BCd   [ label="28: 0" ];
+  ZZ  -> FGd   [ label=" 6: 0" ];
+
+  edge [ color="#00FF00C0" ]
+  BCd -> BCu   [ label=" 1: 1" ];
+  DEd -> DEu   [ label=" 1: 1" ];
+  FGd -> FGu   [ label=" 1: 1" ];
+  
+  edge [ color="#FF0000C0" ]
+  BCu -> BCd   [ label=" 1:-1" ];
+  DEu -> DEd   [ label=" 1:-1" ];
+  FGu -> FGd   [ label=" 1:-1" ];
+
+  /*
+  node [ style="invis" ];
+  edge [ style="invis" ];
+  NN -> M1 -> AA
+  NN -> M2 -> ZZ
+  NN -> M3 -> DEu
+  NN -> M4 -> FGu
+  NN -> M5 -> BCu
+  NN -> BCd
+  NN -> DEd
+  NN -> FGd
+  */
+}

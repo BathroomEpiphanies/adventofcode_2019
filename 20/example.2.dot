@@ -1,0 +1,110 @@
+strict digraph  {
+  //graph [ layout="dot" ];
+  graph [ layout="neato" ];
+  //graph [ layout="circo", root="NN" ];
+  //graph [ layout="twopi", root="NN" ];
+  
+  graph [ size="10,10", ratio="fill", fontsize="2", mindist="1", nodesep="0.3" ];
+  node  [ width="0.5", height="0.5", fontname="Ubuntu", fontsize="8" ];
+  edge  [ minlen="2", fontname="Ubuntu", fontsize="8" ];
+  
+  node [ style="filled", fillcolor="#0000FF40"; ];
+  AA  [ ];
+  ZZ  [ ];
+
+  node [ style="filled", fillcolor="#FF000040"; ];
+  ASd [];
+  BUd [];
+  CPd [];
+  DId [];
+  JOd [];
+  JPd [];
+  LFd [];
+  QGd [];
+  VTd [];
+  YNd [];
+  
+  node [ style="filled", fillcolor="#00FF0040"; ];
+  ASu [];
+  BUu [];
+  CPu [];
+  DIu [];
+  JOu [];
+  JPu [];
+  LFu [];
+  QGu [];
+  VTu [];
+  YNu [];
+
+  edge [ color="#FF0000C0", fontcolor="#FF0000C0" ]
+  ASd -> ASu  [label=" 1"];
+  BUd -> BUu  [label=" 1"];
+  CPd -> CPu  [label=" 1"];
+  DId -> DIu  [label=" 1"];
+  JOd -> JOu  [label=" 1"];
+  JPd -> JPu  [label=" 1"];
+  LFd -> LFu  [label=" 1"];
+  QGd -> QGu  [label=" 1"];
+  VTd -> VTu  [label=" 1"];
+  YNd -> YNu  [label=" 1"];
+
+  edge [ color="#00FF00C0", fontcolor="#00FF00C0" ]
+  ASu -> ASd  [label=" 1"];
+  BUu -> BUd  [label=" 1"];
+  CPu -> CPd  [label=" 1"];
+  DIu -> DId  [label=" 1"];
+  JOu -> JOd  [label=" 1"];
+  JPu -> JPd  [label=" 1"];
+  LFu -> LFd  [label=" 1"];
+  QGu -> QGd  [label=" 1"];
+  VTu -> VTd  [label=" 1"];
+  YNu -> YNd  [label=" 1"];
+
+  edge [ color="#000000C0", fontcolor="#000000FF", dir=both ]
+  VTd -> BUd  [label=" 4"];
+  BUu -> JOd  [label=" 8"];
+  CPu -> JPd  [label=" 8"];
+  DId -> YNu  [label=" 8"];
+  VTu -> YNd  [label=" 8"];
+  ASu -> QGd  [label="10"];
+  BUd -> LFu  [label="10"];
+  JPu -> LFd  [label="10"];
+  QGu -> VTd  [label="10"];
+  ASd -> AA   [label="12"];
+  BUd -> QGu  [label="12"];
+  CPd -> AA   [label="12"];
+  JOu -> ZZ   [label="12"];
+  LFu -> VTd  [label="12"];
+  DIu -> ZZ   [label="20"];
+  LFu -> QGu  [label="20"];
+  ASd -> CPd  [label="22"];
+  DIu -> JOu  [label="26"];
+
+  /*
+  node [ style="invis" ];
+  edge [ style="invis" ];
+  
+  NN -> ASd;
+  NN -> BUd;
+  NN -> CPd;
+  NN -> DId;
+  NN -> JOd;
+  NN -> JPd;
+  NN -> LFd;
+  NN -> QGd;
+  NN -> VTd;
+  NN -> YNd;
+  
+  NN -> M0 -> AA;
+  NN -> M0 -> ZZ;
+  NN -> M1 -> BUu;
+  NN -> M2 -> CPu;
+  NN -> M3 -> DIu;
+  NN -> M4 -> JOu;
+  NN -> M5 -> JPu;
+  NN -> M6 -> LFu;
+  NN -> M7 -> QGu;
+  NN -> M8 -> VTu;
+  NN -> M9 -> YNu;
+  */
+}
